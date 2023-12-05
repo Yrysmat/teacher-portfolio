@@ -1,0 +1,47 @@
+.header{
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position:fixed;
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      width: 600px;
+    }
+    &__link{
+      margin: 0 10px;
+    }
+    
+    &__btn {
+      margin-left: 20px;
+      width: 24px;
+      height: 24px;
+      position: relative;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      &-sun {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+      }
+      &-moon  {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+      }
+    }
+}
+.sun{
+    display: block;
+}
+.moon{
+    display: none;
+}

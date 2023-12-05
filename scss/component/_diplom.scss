@@ -1,0 +1,16 @@
+.diplom{
+    margin-top: 100px;
+    position: relative;
+    &__title{
+        margin-left: 400px;
+        font-size: 40px;
+        color: black;
+        font-family: $font-roboto;
+        font-weight: 500;
+    }
+    &__img{
+        width: 550px;
+        height: 550px;
+        margin: 10px;
+    }
+}

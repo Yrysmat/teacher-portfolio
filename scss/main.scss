@@ -1,0 +1,55 @@
+@import './mixin/var';
+@import './mixin/font';
+@import './mixin/mixin';
+@import './component/header';
+@import './component/hero';
+@import './component/slider';
+@import './component/diplom';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+ul,ol,li {
+    list-style: none;
+}
+body{
+    // overflow: hidden;
+    color: #eee;
+    background: #fff;
+    &.dark-theme{
+        color: #eee;
+        background: #121212;
+        
+    }&.dark-theme a{
+        
+        color: #eee;
+    }
+    &.dark-theme .hero{
+        &__text{
+           color: $white-dark-theme; 
+        }
+        &__title{
+            color: $white-dark-theme;
+        }
+        
+        
+    }&.dark-theme .diplom{
+        &__title{
+            color: $white-dark-theme;
+
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: $a-link;
+    font-family: $font-roboto;
+}
