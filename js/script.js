@@ -9,6 +9,17 @@ headerBtn.addEventListener("click", () => {
     headBtnMoon.classList.toggle('moon')
     // heroTitle.classList.toggle('dark')
 });
+$(function() {
+    let header = $('.header');
+     
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 1) {
+       header.addClass('header_fixed');
+      } else {
+       header.removeClass('header_fixed');
+      }
+    });
+   });
 // $(document).ready(function() {
 //   var currentIndex = 0;
 //   var slides = $('.sliders__slide');

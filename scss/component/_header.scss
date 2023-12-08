@@ -1,12 +1,24 @@
+#header{
+  position:fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .header{
     padding-top:20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    // position:fixed;
+    transition: all 0.5s ease;
+    &_fixed{
+      transition: all 0.5s ease;
+      background: green;
+    }
     &__wrapper {
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
       width: 600px;
     }
     &__link{
@@ -15,6 +27,8 @@
     
     &__btn {
       margin-left: 20px;
+      position: relative;
+      bottom: 5px;
       width: 24px;
       height: 24px;
       position: relative;

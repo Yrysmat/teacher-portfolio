@@ -5,6 +5,7 @@
 @import './component/hero';
 @import './component/slider';
 @import './component/diplom';
+@import './component/adaptation';
 
 
 *{
@@ -14,9 +15,10 @@
 }
 .container{
     width: 1200px;
-    position: relative;
     margin: 0 auto;
+    overflow: hidden;
 }
+
 ul,ol,li {
     list-style: none;
 }
